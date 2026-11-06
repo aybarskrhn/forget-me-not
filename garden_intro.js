@@ -419,7 +419,7 @@
         if (f.x >= target) {
           f.frame = 0;
           setPhase('greet');
-          showBubble('farmer-bubble', 'here you go, little one ♡');
+          showBubble('farmer-bubble', 'here you go, little one');
         }
         break;
       }
