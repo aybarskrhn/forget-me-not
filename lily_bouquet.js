@@ -4,7 +4,7 @@
  * - Interactive Farmer & Sprout Landing Phase with footstep & watering procedural sound
  * - Natural stem bouquet growth from the ground up
  * - Split typography header (glides to wings on bloom)
- * - Botanical history & fun facts dossiers (with chrysanthemums inside joke)
+ * - Botanical history & fun facts dossiers
  * - Continuous organic blooming & breathing time-lapse
  * - Dynamic theme color palettes affecting text, lighting & flowers
  * - Collapsible dock with spring bounce
@@ -41,7 +41,7 @@
     isPlaying: true,
 
     // Selections
-    species: 'grand',      // 'grand', 'roses', 'chrysanthemums', 'lilies', 'peonies'
+    species: 'forgetmenot', // 'forgetmenot', 'sunflowers', 'lilies'
     palette: 'original',   // 'original', 'golden', 'sakura', 'cyberpunk', 'matrix'
     asciiMode: 'classic',
     scanlines: true,
@@ -76,6 +76,8 @@
       yellow: { base: [255, 220, 28], shadow: [190, 150, 12], highlight: [255, 248, 120], spots: [140, 105, 10] },
       coral: { base: [235, 85, 65], shadow: [160, 42, 30], highlight: [255, 140, 115], spots: [110, 28, 20] },
       lavender: { base: [205, 120, 245], shadow: [135, 60, 175], highlight: [240, 185, 255], spots: [95, 35, 130] },
+      blue: { base: [65, 150, 255], shadow: [25, 75, 185], highlight: [175, 225, 255], spots: [255, 220, 35] },
+      sky: { base: [95, 175, 255], shadow: [35, 95, 205], highlight: [205, 240, 255], spots: [255, 230, 50] },
       stems: { base: [50, 195, 68], shadow: [25, 105, 36], highlight: [95, 240, 115] },
       leaves: { base: [38, 168, 54], shadow: [18, 85, 28], highlight: [82, 218, 98] },
       stamens: { filament: [230, 255, 225], anther: [255, 185, 18] },
@@ -93,6 +95,8 @@
       yellow: { base: [255, 225, 60], shadow: [185, 140, 20], highlight: [255, 250, 160], spots: [125, 85, 15] },
       coral: { base: [235, 145, 35], shadow: [145, 78, 15], highlight: [255, 200, 100], spots: [95, 45, 8] },
       lavender: { base: [240, 190, 85], shadow: [155, 110, 30], highlight: [255, 235, 160], spots: [105, 65, 15] },
+      blue: { base: [120, 195, 245], shadow: [60, 115, 175], highlight: [215, 245, 255], spots: [255, 215, 60] },
+      sky: { base: [140, 210, 255], shadow: [75, 130, 190], highlight: [230, 250, 255], spots: [255, 230, 80] },
       stems: { base: [145, 160, 42], shadow: [75, 85, 18], highlight: [200, 220, 85] },
       leaves: { base: [125, 140, 32], shadow: [60, 72, 14], highlight: [180, 195, 65] },
       stamens: { filament: [255, 245, 195], anther: [255, 160, 18] },
@@ -110,6 +114,8 @@
       yellow: { base: [255, 205, 215], shadow: [195, 135, 145], highlight: [255, 245, 250], spots: [145, 95, 105] },
       coral: { base: [230, 80, 120], shadow: [140, 35, 65], highlight: [255, 150, 180], spots: [90, 20, 40] },
       lavender: { base: [225, 140, 210], shadow: [150, 65, 140], highlight: [255, 200, 245], spots: [110, 40, 100] },
+      blue: { base: [140, 175, 255], shadow: [85, 105, 195], highlight: [220, 235, 255], spots: [255, 235, 120] },
+      sky: { base: [165, 195, 255], shadow: [105, 125, 210], highlight: [235, 245, 255], spots: [255, 245, 140] },
       stems: { base: [65, 165, 98], shadow: [32, 88, 50], highlight: [110, 205, 145] },
       leaves: { base: [50, 145, 82], shadow: [24, 75, 40], highlight: [88, 185, 120] },
       stamens: { filament: [255, 235, 240], anther: [255, 190, 110] },
@@ -127,6 +133,8 @@
       yellow: { base: [255, 135, 0], shadow: [150, 65, 0], highlight: [255, 195, 95], spots: [80, 30, 0] },
       coral: { base: [255, 0, 85], shadow: [125, 0, 40], highlight: [255, 95, 140], spots: [60, 0, 20] },
       lavender: { base: [165, 0, 255], shadow: [85, 0, 140], highlight: [215, 110, 255], spots: [40, 0, 70] },
+      blue: { base: [0, 215, 255], shadow: [0, 95, 195], highlight: [180, 255, 255], spots: [255, 245, 0] },
+      sky: { base: [40, 235, 255], shadow: [0, 120, 215], highlight: [200, 255, 255], spots: [255, 255, 50] },
       stems: { base: [0, 255, 140], shadow: [0, 115, 55], highlight: [125, 255, 195] },
       leaves: { base: [0, 195, 175], shadow: [0, 90, 75], highlight: [100, 255, 235] },
       stamens: { filament: [225, 255, 255], anther: [255, 240, 0] },
@@ -144,6 +152,8 @@
       yellow: { base: [50, 255, 90], shadow: [14, 120, 28], highlight: [175, 255, 200], spots: [10, 70, 16] },
       coral: { base: [28, 240, 60], shadow: [8, 90, 18], highlight: [145, 255, 170], spots: [4, 50, 10] },
       lavender: { base: [32, 245, 68], shadow: [9, 100, 20], highlight: [150, 255, 175], spots: [5, 55, 11] },
+      blue: { base: [35, 240, 190], shadow: [10, 110, 85], highlight: [160, 255, 225], spots: [210, 255, 140] },
+      sky: { base: [55, 250, 210], shadow: [15, 130, 105], highlight: [190, 255, 240], spots: [230, 255, 160] },
       stems: { base: [18, 185, 42], shadow: [6, 72, 14], highlight: [65, 235, 92] },
       leaves: { base: [14, 155, 32], shadow: [4, 62, 10], highlight: [52, 205, 78] },
       stamens: { filament: [165, 255, 185], anther: [215, 255, 145] },
@@ -151,47 +161,28 @@
     },
   };
 
-  // Botanical Dossiers & Fun Facts (With Inside Joke on Chrysanthemums)
+  // Botanical Dossiers & Fun Facts
   const BOTANICAL_DOSSIERS = {
-    grand: {
-      tag: "💐 Master Floral Symphony",
-      name: "Grand Garden Bouquet",
-      botanicalName: "Plantae Magnoliophyta &bull; Flora Bountiful",
-      desc: "An opulent multi-species botanical arrangement featuring spiraling garden roses, radiating spider chrysanthemums, recurved royal lilies, and ruffled romantic peonies.",
-      fact: "Polyculture arrangements like this have been celebrated since 17th-century Dutch masters as representations of nature's infinite creative geometry.",
-      note: "a little of everything, because one kind of flower was never going to be enough for you.",
-    },
-    roses: {
-      tag: "🌹 Royal Rosa Dossier",
-      name: "English Garden Roses",
-      botanicalName: "Rosa gallica &bull; Rosaceae",
-      desc: "Revered for centuries in royal gardens, cabbage roses feature up to 40 layered, spiraled petals arranged according to the golden ratio.",
-      fact: "Fossilized rose leaves date back 35 million years. Cleopatra was said to have carpeted her banquet floors with a foot of rose petals.",
-      note: "roses are the obvious choice. you were never the obvious choice — you're the only one.",
-    },
-    chrysanthemums: {
-      tag: "🌼 Radiating Florets",
-      name: "Spider Chrysanthemums",
-      botanicalName: "Chrysanthemum morifolium &bull; Asteraceae<code class=\"spellcheck\">spell('chrysanthemum') <span>// Take note of the spelling🤣.</span></code>",
-      desc: "Originating in ancient East Asia over 3,000 years ago, spider mums feature tubular ray florets that arch outward like golden floral fireworks.",
-      fact: "Japan's imperial throne is literally called the Chrysanthemum Throne, and a 16-petal mum has been the Emperor's seal for over 800 years.",
-      note: "they stand for joy & long life. selfishly, I'd like both of those with you.",
-    },
     lilies: {
       tag: "🌺 Regal Lilium Dossier",
       name: "Royal Asiatic Lilies",
       botanicalName: "Lilium asiatica &bull; Liliaceae",
       desc: "Distinguished by six massive recurved tepals, deep throat papillae (freckles), and prominent filaments tipped with golden pollen anthers.",
       fact: "In botanical folklore, lilies represent majestic rebirth. Each lily blossom faces the horizon to maximize sun exposure and pollinator flight paths.",
-      note: "lilies always turn to face the light. funny, I have the same problem around you.",
     },
-    peonies: {
-      tag: "🌸 Voluminous Blossom",
-      name: "Romantic Peonies",
-      botanicalName: "Paeonia lactiflora &bull; Paeoniaceae",
-      desc: "Sensuous and lavish, peonies burst from tight round spheres into pillowy bowls with dozens of crinkled, translucent, ruffled layers.",
-      fact: "In China, the peony is known as the 'King of Flowers' (花王) and was declared the national flower during the Qing dynasty.",
-      note: "peonies mean a happy life & good fortune. I already got mine — I met you.",
+    sunflowers: {
+      tag: "🌻 Solar Helianthus Dossier",
+      name: "Sunflowers",
+      botanicalName: "Helianthus annuus &bull; Asteraceae",
+      desc: "Celebrated for golden heliotropism and radiant solar symmetry, sunflowers feature dozens of brilliant ray florets encircling a vast disc patterned in Fermat spirals of the golden ratio.",
+      fact: "Young sunflower buds follow the sun from east to west every day. Once in full bloom, they permanently face east toward the morning light to warm their pollen and welcome pollinators. There are tons of them in Trakya!",
+    },
+    forgetmenot: {
+      tag: "💙 Scorpioid Cyme Dossier",
+      name: "Forget-me-not (Scorpion Grasses)",
+      botanicalName: "Myosotis sylvatica &bull; Boraginaceae",
+      desc: "Named scorpion grass for its graceful curving cyme that uncoils like a scorpion's tail, Myosotis bears iconic five-lobed sky-blue salverform petals illuminated by a glowing yellow pentagonal eye.",
+      fact: "The purple forget-me-not is the official symbol of Armenian Genocide remembrance, featuring five petals that represent the five continents where survivors formed the global diaspora, and also Aybars' favorite flower.",
     },
   };
 
@@ -221,51 +212,6 @@
 
   // Bouquet Composition Schemes (13 blooms, tiered depth)
   const BOUQUET_SCHEMES = {
-    grand: [
-      { type: 'lily', relX: 0, relY: -10, scale: 1.55, tilt: 0, color: 'red', delay: 0.12, z: 12 },
-      { type: 'peony', relX: -160, relY: -150, scale: 1.38, tilt: -0.22, color: 'white', delay: 0.16, z: 8 },
-      { type: 'chrysanthemum', relX: 165, relY: -145, scale: 1.38, tilt: 0.24, color: 'gold', delay: 0.18, z: 7 },
-      { type: 'rose', relX: -180, relY: 45, scale: 1.40, tilt: -0.32, color: 'magenta', delay: 0.14, z: 9 },
-      { type: 'rose', relX: 185, relY: 38, scale: 1.36, tilt: 0.34, color: 'wine', delay: 0.15, z: 8 },
-      { type: 'lily', relX: 0, relY: 145, scale: 1.42, tilt: 0.04, color: 'peach', delay: 0.10, z: 11 },
-      { type: 'chrysanthemum', relX: -165, relY: 190, scale: 1.25, tilt: -0.42, color: 'yellow', delay: 0.08, z: 5 },
-      { type: 'rose', relX: 165, relY: 185, scale: 1.25, tilt: 0.44, color: 'coral', delay: 0.09, z: 4 },
-      { type: 'peony', relX: 15, relY: -270, scale: 1.10, tilt: 0.08, color: 'lavender', delay: 0.22, z: 3 },
-      { type: 'rose', relX: -245, relY: -50, scale: 1.05, tilt: -0.55, color: 'peach', delay: 0.20, z: 2 },
-      { type: 'chrysanthemum', relX: 245, relY: -42, scale: 1.05, tilt: 0.58, color: 'gold', delay: 0.21, z: 2 },
-      { type: 'lily', relX: -95, relY: -235, scale: 0.98, tilt: -0.15, color: 'white', delay: 0.24, z: 1 },
-      { type: 'rose', relX: 105, relY: -230, scale: 0.98, tilt: 0.18, color: 'magenta', delay: 0.25, z: 1 },
-    ],
-    roses: [
-      { type: 'rose', relX: 0, relY: -15, scale: 1.68, tilt: 0, color: 'red', delay: 0.12, z: 12 },
-      { type: 'rose', relX: -155, relY: -145, scale: 1.45, tilt: -0.25, color: 'peach', delay: 0.16, z: 7 },
-      { type: 'rose', relX: 155, relY: -140, scale: 1.42, tilt: 0.28, color: 'white', delay: 0.17, z: 6 },
-      { type: 'rose', relX: -185, relY: 45, scale: 1.48, tilt: -0.34, color: 'magenta', delay: 0.13, z: 9 },
-      { type: 'rose', relX: 190, relY: 40, scale: 1.45, tilt: 0.36, color: 'coral', delay: 0.14, z: 8 },
-      { type: 'rose', relX: 0, relY: 145, scale: 1.50, tilt: 0.05, color: 'wine', delay: 0.10, z: 11 },
-      { type: 'rose', relX: -160, relY: 185, scale: 1.28, tilt: -0.44, color: 'yellow', delay: 0.08, z: 5 },
-      { type: 'rose', relX: 160, relY: 180, scale: 1.25, tilt: 0.46, color: 'lavender', delay: 0.09, z: 4 },
-      { type: 'rose', relX: 12, relY: -268, scale: 1.12, tilt: 0.10, color: 'red', delay: 0.22, z: 3 },
-      { type: 'rose', relX: -245, relY: -45, scale: 1.08, tilt: -0.60, color: 'white', delay: 0.20, z: 2 },
-      { type: 'rose', relX: 250, relY: -40, scale: 1.08, tilt: 0.62, color: 'peach', delay: 0.21, z: 2 },
-      { type: 'rose', relX: -98, relY: -225, scale: 1.00, tilt: -0.18, color: 'magenta', delay: 0.24, z: 1 },
-      { type: 'rose', relX: 105, relY: -220, scale: 1.00, tilt: 0.20, color: 'gold', delay: 0.25, z: 1 },
-    ],
-    chrysanthemums: [
-      { type: 'chrysanthemum', relX: 0, relY: -10, scale: 1.72, tilt: 0, color: 'gold', delay: 0.12, z: 12 },
-      { type: 'chrysanthemum', relX: -160, relY: -145, scale: 1.46, tilt: -0.22, color: 'white', delay: 0.16, z: 7 },
-      { type: 'chrysanthemum', relX: 160, relY: -140, scale: 1.44, tilt: 0.25, color: 'lavender', delay: 0.17, z: 6 },
-      { type: 'chrysanthemum', relX: -190, relY: 50, scale: 1.48, tilt: -0.32, color: 'yellow', delay: 0.13, z: 9 },
-      { type: 'chrysanthemum', relX: 195, relY: 45, scale: 1.45, tilt: 0.35, color: 'red', delay: 0.14, z: 8 },
-      { type: 'chrysanthemum', relX: 0, relY: 150, scale: 1.52, tilt: 0.04, color: 'coral', delay: 0.10, z: 11 },
-      { type: 'chrysanthemum', relX: -165, relY: 190, scale: 1.30, tilt: -0.42, color: 'magenta', delay: 0.08, z: 5 },
-      { type: 'chrysanthemum', relX: 165, relY: 185, scale: 1.28, tilt: 0.45, color: 'peach', delay: 0.09, z: 4 },
-      { type: 'chrysanthemum', relX: 12, relY: -270, scale: 1.14, tilt: 0.08, color: 'gold', delay: 0.22, z: 3 },
-      { type: 'chrysanthemum', relX: -250, relY: -48, scale: 1.10, tilt: -0.58, color: 'wine', delay: 0.20, z: 2 },
-      { type: 'chrysanthemum', relX: 255, relY: -42, scale: 1.10, tilt: 0.60, color: 'white', delay: 0.21, z: 2 },
-      { type: 'chrysanthemum', relX: -98, relY: -230, scale: 1.02, tilt: -0.16, color: 'yellow', delay: 0.24, z: 1 },
-      { type: 'chrysanthemum', relX: 105, relY: -225, scale: 1.02, tilt: 0.18, color: 'lavender', delay: 0.25, z: 1 },
-    ],
     lilies: [
       { type: 'lily', relX: 0, relY: -10, scale: 1.62, tilt: 0, color: 'red', delay: 0.12, z: 12 },
       { type: 'lily', relX: -160, relY: -150, scale: 1.42, tilt: -0.22, color: 'white', delay: 0.16, z: 7 },
@@ -281,20 +227,35 @@
       { type: 'lily', relX: -98, relY: -235, scale: 0.98, tilt: -0.16, color: 'red', delay: 0.24, z: 1 },
       { type: 'lily', relX: 105, relY: -230, scale: 0.98, tilt: 0.18, color: 'gold', delay: 0.25, z: 1 },
     ],
-    peonies: [
-      { type: 'peony', relX: 0, relY: -10, scale: 1.72, tilt: 0, color: 'white', delay: 0.12, z: 12 },
-      { type: 'peony', relX: -155, relY: -145, scale: 1.48, tilt: -0.22, color: 'magenta', delay: 0.16, z: 7 },
-      { type: 'peony', relX: 160, relY: -140, scale: 1.45, tilt: 0.25, color: 'coral', delay: 0.17, z: 6 },
-      { type: 'peony', relX: -185, relY: 45, scale: 1.50, tilt: -0.32, color: 'peach', delay: 0.13, z: 9 },
-      { type: 'peony', relX: 190, relY: 40, scale: 1.46, tilt: 0.35, color: 'lavender', delay: 0.14, z: 8 },
-      { type: 'peony', relX: 0, relY: 145, scale: 1.54, tilt: 0.04, color: 'red', delay: 0.10, z: 11 },
-      { type: 'peony', relX: -165, relY: 185, scale: 1.30, tilt: -0.42, color: 'white', delay: 0.08, z: 5 },
-      { type: 'peony', relX: 165, relY: 180, scale: 1.28, tilt: 0.45, color: 'wine', delay: 0.09, z: 4 },
-      { type: 'peony', relX: 12, relY: -270, scale: 1.14, tilt: 0.08, color: 'magenta', delay: 0.22, z: 3 },
-      { type: 'peony', relX: -250, relY: -48, scale: 1.10, tilt: -0.58, color: 'peach', delay: 0.20, z: 2 },
-      { type: 'peony', relX: 255, relY: -42, scale: 1.10, tilt: 0.60, color: 'coral', delay: 0.21, z: 2 },
-      { type: 'peony', relX: -98, relY: -230, scale: 1.02, tilt: -0.16, color: 'lavender', delay: 0.24, z: 1 },
-      { type: 'peony', relX: 105, relY: -225, scale: 1.02, tilt: 0.18, color: 'white', delay: 0.25, z: 1 },
+    sunflowers: [
+      { type: 'sunflower', relX: 0, relY: -10, scale: 1.70, tilt: 0, color: 'gold', delay: 0.12, z: 12 },
+      { type: 'sunflower', relX: -155, relY: -145, scale: 1.45, tilt: -0.22, color: 'yellow', delay: 0.16, z: 7 },
+      { type: 'sunflower', relX: 160, relY: -140, scale: 1.42, tilt: 0.25, color: 'gold', delay: 0.17, z: 6 },
+      { type: 'sunflower', relX: -185, relY: 48, scale: 1.46, tilt: -0.32, color: 'gold', delay: 0.13, z: 9 },
+      { type: 'sunflower', relX: 190, relY: 42, scale: 1.42, tilt: 0.35, color: 'yellow', delay: 0.14, z: 8 },
+      { type: 'sunflower', relX: 0, relY: 150, scale: 1.50, tilt: 0.04, color: 'gold', delay: 0.10, z: 11 },
+      { type: 'sunflower', relX: -165, relY: 190, scale: 1.28, tilt: -0.42, color: 'yellow', delay: 0.08, z: 5 },
+      { type: 'sunflower', relX: 165, relY: 185, scale: 1.25, tilt: 0.45, color: 'gold', delay: 0.09, z: 4 },
+      { type: 'sunflower', relX: 12, relY: -270, scale: 1.12, tilt: 0.08, color: 'yellow', delay: 0.22, z: 3 },
+      { type: 'sunflower', relX: -245, relY: -48, scale: 1.08, tilt: -0.58, color: 'gold', delay: 0.20, z: 2 },
+      { type: 'sunflower', relX: 250, relY: -42, scale: 1.08, tilt: 0.60, color: 'yellow', delay: 0.21, z: 2 },
+      { type: 'sunflower', relX: -98, relY: -230, scale: 1.00, tilt: -0.16, color: 'gold', delay: 0.24, z: 1 },
+      { type: 'sunflower', relX: 105, relY: -225, scale: 1.00, tilt: 0.18, color: 'yellow', delay: 0.25, z: 1 },
+    ],
+    forgetmenot: [
+      { type: 'forgetmenot', relX: 0, relY: -10, scale: 1.65, tilt: 0, color: 'blue', delay: 0.12, z: 12 },
+      { type: 'forgetmenot', relX: -155, relY: -145, scale: 1.44, tilt: -0.22, color: 'sky', delay: 0.16, z: 7 },
+      { type: 'forgetmenot', relX: 160, relY: -140, scale: 1.42, tilt: 0.25, color: 'blue', delay: 0.17, z: 6 },
+      { type: 'forgetmenot', relX: -185, relY: 48, scale: 1.46, tilt: -0.32, color: 'sky', delay: 0.13, z: 9 },
+      { type: 'forgetmenot', relX: 190, relY: 42, scale: 1.42, tilt: 0.35, color: 'blue', delay: 0.14, z: 8 },
+      { type: 'forgetmenot', relX: 0, relY: 150, scale: 1.50, tilt: 0.04, color: 'blue', delay: 0.10, z: 11 },
+      { type: 'forgetmenot', relX: -165, relY: 190, scale: 1.28, tilt: -0.42, color: 'sky', delay: 0.08, z: 5 },
+      { type: 'forgetmenot', relX: 165, relY: 185, scale: 1.25, tilt: 0.45, color: 'white', delay: 0.09, z: 4 },
+      { type: 'forgetmenot', relX: 12, relY: -270, scale: 1.12, tilt: 0.08, color: 'blue', delay: 0.22, z: 3 },
+      { type: 'forgetmenot', relX: -245, relY: -48, scale: 1.08, tilt: -0.58, color: 'sky', delay: 0.20, z: 2 },
+      { type: 'forgetmenot', relX: 250, relY: -42, scale: 1.08, tilt: 0.60, color: 'lavender', delay: 0.21, z: 2 },
+      { type: 'forgetmenot', relX: -98, relY: -230, scale: 1.00, tilt: -0.16, color: 'blue', delay: 0.24, z: 1 },
+      { type: 'forgetmenot', relX: 105, relY: -225, scale: 1.00, tilt: 0.18, color: 'sky', delay: 0.25, z: 1 },
     ],
   };
 
@@ -576,11 +537,16 @@
     const SPREAD_X = 1.08;
     const SPREAD_Y = 1.02;
     const BLOOM_SIZE = 1.0;
-    const scheme = BOUQUET_SCHEMES[state.species] || BOUQUET_SCHEMES.grand;
+    const scheme = BOUQUET_SCHEMES[state.species] || BOUQUET_SCHEMES.forgetmenot;
     // Extra blooms tucked into the gaps between the main 13 for a fuller bouquet
     const fillers = BOUQUET_FILLERS.map((f, i) => {
       const donor = scheme[(i * 5 + 3) % scheme.length];
-      return { ...f, type: donor.type, color: FILLER_COLORS[i % FILLER_COLORS.length] };
+      const color = donor.type === 'sunflower'
+        ? (i % 2 === 0 ? 'gold' : 'yellow')
+        : donor.type === 'forgetmenot'
+        ? (i % 3 === 0 ? 'blue' : i % 3 === 1 ? 'sky' : 'white')
+        : FILLER_COLORS[i % FILLER_COLORS.length];
+      return { ...f, type: donor.type, color };
     });
     const centerY = state.height * 0.54;
 
@@ -600,7 +566,12 @@
 
     const extras = portrait ? PORTRAIT_FILLERS.map((f, i) => {
       const donor = scheme[(i * 3 + 1) % scheme.length];
-      return { ...f, type: donor.type, color: FILLER_COLORS[(i + 4) % FILLER_COLORS.length] };
+      const color = donor.type === 'sunflower'
+        ? (i % 2 === 0 ? 'yellow' : 'gold')
+        : donor.type === 'forgetmenot'
+        ? (i % 2 === 0 ? 'sky' : 'blue')
+        : FILLER_COLORS[(i + 4) % FILLER_COLORS.length];
+      return { ...f, type: donor.type, color };
     }) : [];
     const bouquet = scheme.concat(fillers, extras).map((fl) => {
       const rise = groundY - (centerY + fl.relY * SPREAD_Y);
@@ -695,12 +666,10 @@
       ctx.translate(flowerX, flowerY);
       ctx.rotate(fl.tilt + (windSway * 0.002) + Math.sin(time * 1.6 + idx) * 0.03);
 
-      if (fl.type === 'rose') {
-        drawBountifulRose(ctx, flowerGrowth, fl.scale, colorSpec, pal, time + idx);
-      } else if (fl.type === 'chrysanthemum') {
-        drawBountifulChrysanthemum(ctx, flowerGrowth, fl.scale, colorSpec, pal, time + idx);
-      } else if (fl.type === 'peony') {
-        drawBountifulPeony(ctx, flowerGrowth, fl.scale, colorSpec, pal, time + idx);
+      if (fl.type === 'sunflower') {
+        drawBountifulSunflower(ctx, flowerGrowth, fl.scale, colorSpec, pal, time + idx);
+      } else if (fl.type === 'forgetmenot') {
+        drawBountifulForgetMeNot(ctx, flowerGrowth, fl.scale, colorSpec, pal, time + idx);
       } else {
         drawBountifulLily(ctx, flowerGrowth, fl.scale, colorSpec, pal, time + idx);
       }
@@ -762,184 +731,417 @@
     ctx.restore();
   }
 
-  // --- SPECIES 1: ENGLISH GARDEN ROSE ---
-  function drawBountifulRose(ctx, growth, scale, fColor, pal, seed) {
+  // --- SPECIES: SUNFLOWER (Helianthus annuus) ---
+  function drawBountifulSunflower(ctx, growth, scale, fColor, pal, seed) {
     if (growth < 0.20) {
-      drawRoseBud(ctx, growth / 0.20, scale, fColor, pal);
+      drawSunflowerBud(ctx, growth / 0.20, scale, fColor, pal);
       return;
     }
 
     const bloom = easeOutCubic((growth - 0.20) / 0.80);
-    const numPetals = 32;
-    const maxR = 90 * scale * (0.28 + 0.72 * bloom);
-    const goldenAngle = 137.508 * (Math.PI / 180);
-
-    // Sepals peeling back
-    for (let s = 0; s < 5; s++) {
-      const sAngle = (s * Math.PI * 2) / 5;
-      const sLen = 50 * scale * (1 - 0.3 * bloom);
-      ctx.save();
-      ctx.rotate(sAngle);
-      ctx.beginPath();
-      ctx.moveTo(-6 * scale, 0);
-      ctx.quadraticCurveTo(-10 * scale, -sLen * 0.5, 0, -sLen);
-      ctx.quadraticCurveTo(10 * scale, -sLen * 0.5, 6 * scale, 0);
-      ctx.fillStyle = `rgb(${pal.leaves.base.join(',')})`;
-      ctx.fill();
-      ctx.restore();
-    }
-
-    // Concentric petals
-    for (let i = numPetals - 1; i >= 0; i--) {
-      const frac = i / numPetals;
-      const petalBloom = smoothstep(1.0 - frac * 0.85, 1.0, bloom);
-      if (petalBloom <= 0.01) continue;
-
-      const angle = i * goldenAngle;
-      const dist = Math.sqrt(frac) * maxR * (0.35 + 0.65 * petalBloom);
-
-      const px = Math.cos(angle) * dist;
-      const py = Math.sin(angle) * dist;
-
-      const pWidth = (28 + 42 * frac) * scale * (0.4 + 0.6 * petalBloom);
-      const pHeight = (24 + 36 * frac) * scale * (0.4 + 0.6 * petalBloom);
-
-      ctx.save();
-      ctx.translate(px, py);
-      ctx.rotate(angle + Math.PI / 2);
-
-      ctx.beginPath();
-      ctx.moveTo(-pWidth / 2, 0);
-      ctx.bezierCurveTo(-pWidth * 0.6, -pHeight * 0.6, -pWidth * 0.3, -pHeight * 1.08, 0, -pHeight);
-      ctx.bezierCurveTo(pWidth * 0.3, -pHeight * 1.08, pWidth * 0.6, -pHeight * 0.6, pWidth / 2, 0);
-      ctx.closePath();
-
-      const gradH = Math.max(1, pHeight || 1);
-      const grad = ctx.createLinearGradient(0, 0, 0, -gradH);
-      grad.addColorStop(0, `rgb(${fColor.shadow.join(',')})`);
-      grad.addColorStop(0.5, `rgb(${fColor.base.join(',')})`);
-      grad.addColorStop(1, `rgb(${fColor.highlight.join(',')})`);
-
-      ctx.fillStyle = grad;
-      ctx.fill();
-
-      ctx.strokeStyle = `rgba(${fColor.highlight.map(c => Math.min(255, c + 30)).join(',')}, 0.75)`;
-      ctx.lineWidth = 1.4;
-      ctx.stroke();
-
-      ctx.restore();
-    }
-
-    ctx.beginPath();
-    ctx.arc(0, 0, 14 * scale * (1 - 0.4 * bloom), 0, Math.PI * 2);
-    ctx.fillStyle = `rgb(${fColor.shadow.join(',')})`;
-    ctx.fill();
-  }
-
-  function drawRoseBud(ctx, prog, scale, fColor, pal) {
-    const budH = (45 + 35 * prog) * scale;
-    const budW = (18 + 16 * prog) * scale;
+    const maxRayLen = (68 + 26 * bloom) * scale;
+    const rayWidth = (14 + 5 * bloom) * scale;
+    const discRadius = (28 + 14 * bloom) * scale;
+    const breath = Math.sin(state.time * 2.2 + seed) * 1.5;
 
     ctx.save();
-    ctx.beginPath();
-    ctx.moveTo(0, -budH);
-    ctx.bezierCurveTo(budW, -budH * 0.5, budW * 1.1, 0, 0, 10);
-    ctx.bezierCurveTo(-budW * 1.1, 0, -budW, -budH * 0.5, 0, -budH);
-    ctx.fillStyle = `rgb(${pal.leaves.base.join(',')})`;
-    ctx.fill();
 
-    ctx.beginPath();
-    ctx.moveTo(0, -budH * 0.95);
-    ctx.bezierCurveTo(budW * 0.6, -budH * 0.5, budW * 0.6, -budH * 0.2, 0, 0);
-    ctx.bezierCurveTo(-budW * 0.6, -budH * 0.2, -budW * 0.6, -budH * 0.5, 0, -budH * 0.95);
-    ctx.fillStyle = `rgb(${fColor.base.join(',')})`;
-    ctx.fill();
-
-    ctx.restore();
-  }
-
-  // --- SPECIES 2: SPIDER CHRYSANTHEMUM ---
-  function drawBountifulChrysanthemum(ctx, growth, scale, fColor, pal, seed) {
-    if (growth < 0.18) {
-      drawChrysanthemumBud(ctx, growth / 0.18, scale, fColor, pal);
-      return;
-    }
-
-    const bloom = easeOutCubic((growth - 0.18) / 0.82);
-    const rings = 6;
-    const floretsPerRing = [12, 16, 20, 22, 24, 26];
-
-    for (let s = 0; s < 6; s++) {
-      const sAngle = (s * Math.PI * 2) / 6;
+    // 1. Involucre / Calyx Phyllary Bracts behind the flower
+    const numBracts = 18;
+    for (let b = 0; b < numBracts; b++) {
+      const bAngle = (b * Math.PI * 2) / numBracts + (seed * 0.1);
+      const bLen = (maxRayLen * 0.65) * (0.7 + 0.3 * bloom);
       ctx.save();
-      ctx.rotate(sAngle);
+      ctx.rotate(bAngle);
       ctx.beginPath();
-      ctx.moveTo(-5 * scale, 0);
-      ctx.lineTo(0, -35 * scale);
-      ctx.lineTo(5 * scale, 0);
+      ctx.moveTo(-6 * scale, 0);
+      ctx.quadraticCurveTo(-8 * scale, -bLen * 0.5, 0, -bLen);
+      ctx.quadraticCurveTo(8 * scale, -bLen * 0.5, 6 * scale, 0);
+      ctx.closePath();
       ctx.fillStyle = `rgb(${pal.leaves.shadow.join(',')})`;
       ctx.fill();
+      ctx.strokeStyle = `rgb(${pal.leaves.base.join(',')})`;
+      ctx.lineWidth = 1.0;
+      ctx.stroke();
       ctx.restore();
     }
 
-    for (let r = rings - 1; r >= 0; r--) {
-      const ringFrac = r / rings;
-      const count = floretsPerRing[r];
-      const maxLen = (45 + r * 16) * scale * (0.3 + 0.7 * bloom);
-      const ringBloom = smoothstep(1.0 - ringFrac * 0.8, 1.0, bloom);
+    // 2. Ray Florets (Golden Petals): 2 staggered concentric tiers (outer and inner)
+    for (let tier = 0; tier < 2; tier++) {
+      const isInner = tier === 1;
+      const count = 17;
+      const tierOffset = isInner ? (Math.PI / count) : 0;
+      const tLen = (isInner ? maxRayLen * 0.92 : maxRayLen) + (isInner ? 0 : breath);
+      const tWidth = isInner ? rayWidth * 0.9 : rayWidth;
 
-      if (ringBloom <= 0.01) continue;
+      for (let i = 0; i < count; i++) {
+        const angle = (i * Math.PI * 2) / count + tierOffset;
+        const floretBloom = smoothstep(0.0, 0.9, bloom);
+        if (floretBloom <= 0.01) continue;
 
-      for (let f = 0; f < count; f++) {
-        const baseAngle = (f * Math.PI * 2) / count + (r * 0.35);
-        const len = maxLen * (0.9 + 0.2 * Math.sin(f * 3.7 + seed));
-        const curve = (25 + r * 6) * ringBloom * (f % 2 === 0 ? 1 : -1) * 0.5;
+        const pLen = tLen * (0.35 + 0.65 * floretBloom);
+        const pW = tWidth * (0.35 + 0.65 * floretBloom);
 
         ctx.save();
-        ctx.rotate(baseAngle);
+        ctx.rotate(angle);
 
+        // Ray floret shape: tapers from disc base out to pointed tip with gentle flutter
         ctx.beginPath();
-        ctx.moveTo(0, 0);
-        ctx.quadraticCurveTo(curve, -len * 0.6, curve * 1.3, -len);
+        ctx.moveTo(-pW * 0.35, -discRadius * 0.6);
+        ctx.bezierCurveTo(-pW * 0.85, -pLen * 0.45, -pW * 0.65, -pLen * 0.85, 0, -pLen);
+        ctx.bezierCurveTo(pW * 0.65, -pLen * 0.85, pW * 0.85, -pLen * 0.45, pW * 0.35, -discRadius * 0.6);
+        ctx.closePath();
 
-        const gradLen = Math.max(1, len || 1);
-        const floretGrad = ctx.createLinearGradient(0, 0, curve * 1.3, -gradLen);
-        floretGrad.addColorStop(0, `rgb(${fColor.shadow.join(',')})`);
-        floretGrad.addColorStop(0.6, `rgb(${fColor.base.join(',')})`);
-        floretGrad.addColorStop(1, `rgb(${fColor.highlight.join(',')})`);
+        // Radiant golden-yellow gradient: amber base -> vibrant gold -> luminous tip
+        const rayGrad = ctx.createLinearGradient(0, -discRadius * 0.6, 0, -pLen);
+        rayGrad.addColorStop(0, `rgb(${fColor.shadow.join(',')})`);
+        rayGrad.addColorStop(0.3, `rgb(${fColor.base.join(',')})`);
+        rayGrad.addColorStop(0.85, `rgb(${fColor.highlight.join(',')})`);
+        rayGrad.addColorStop(1, `rgb(${fColor.highlight.map(c => Math.min(255, c + 20)).join(',')})`);
 
-        ctx.strokeStyle = floretGrad;
-        ctx.lineWidth = (3.5 + (1 - ringFrac) * 1.5) * scale;
-        ctx.lineCap = 'round';
+        ctx.fillStyle = rayGrad;
+        ctx.fill();
+
+        // Petal center vein / crease
+        ctx.beginPath();
+        ctx.moveTo(0, -discRadius * 0.6);
+        ctx.lineTo(0, -pLen * 0.96);
+        ctx.strokeStyle = `rgba(${fColor.shadow.join(',')}, 0.35)`;
+        ctx.lineWidth = 1.2 * scale;
         ctx.stroke();
 
         ctx.beginPath();
-        ctx.arc(curve * 1.3, -len, 2.5 * scale, 0, Math.PI * 2);
-        ctx.fillStyle = `rgb(${fColor.highlight.join(',')})`;
-        ctx.fill();
+        ctx.moveTo(0, -discRadius * 0.6);
+        ctx.lineTo(0, -pLen * 0.96);
+        ctx.strokeStyle = `rgba(${fColor.highlight.join(',')}, 0.5)`;
+        ctx.lineWidth = 0.8 * scale;
+        ctx.stroke();
 
         ctx.restore();
       }
     }
 
+    // 3. Central Disc Floret (Pseudanthium) with Fibonacci Fermat Spirals
     ctx.beginPath();
-    ctx.arc(0, 0, 16 * scale * bloom, 0, Math.PI * 2);
-    ctx.fillStyle = `rgb(${pal.stamens.anther.join(',')})`;
+    ctx.arc(0, 0, discRadius, 0, Math.PI * 2);
+    const discGrad = ctx.createRadialGradient(0, 0, discRadius * 0.1, 0, 0, discRadius);
+    discGrad.addColorStop(0, 'rgb(35, 18, 12)');      // Deep espresso core
+    discGrad.addColorStop(0.55, 'rgb(65, 34, 18)');   // Dark bronze-mahogany
+    discGrad.addColorStop(0.85, 'rgb(95, 52, 22)');   // Warm amber-brown
+    discGrad.addColorStop(1.0, 'rgb(130, 78, 25)');   // Golden brown rim
+    ctx.fillStyle = discGrad;
+    ctx.fill();
+
+    // Fibonacci Phyllotaxis Spiral Florets ($137.5^\circ$)
+    const numDiscFlorets = Math.floor(75 * bloom);
+    const goldenAngle = 137.507764 * (Math.PI / 180);
+
+    for (let n = 1; n <= numDiscFlorets; n++) {
+      const frac = n / 75;
+      const r = Math.sqrt(frac) * (discRadius * 0.92);
+      const theta = n * goldenAngle;
+      const fx = Math.cos(theta) * r;
+      const fy = Math.sin(theta) * r;
+      const floretR = (1.2 + 1.6 * frac) * scale;
+
+      ctx.beginPath();
+      ctx.arc(fx, fy, floretR, 0, Math.PI * 2);
+
+      // Outer rings have bright golden pollen; inner core is dark chocolate
+      if (frac > 0.65) {
+        ctx.fillStyle = `rgb(${pal.stamens.anther.join(',')})`;
+      } else if (frac > 0.35) {
+        ctx.fillStyle = 'rgb(185, 115, 30)';
+      } else {
+        ctx.fillStyle = 'rgb(55, 28, 16)';
+      }
+      ctx.fill();
+    }
+
+    // Outer ring of fluffy golden pollen anthers around the disc edge
+    if (bloom > 0.4) {
+      const antherCount = 28;
+      for (let a = 0; a < antherCount; a++) {
+        const aAngle = (a * Math.PI * 2) / antherCount + (seed * 0.2);
+        const aDist = discRadius * (0.92 + 0.06 * Math.sin(a * 4 + seed));
+        const ax = Math.cos(aAngle) * aDist;
+        const ay = Math.sin(aAngle) * aDist;
+        ctx.beginPath();
+        ctx.arc(ax, ay, 2.0 * scale, 0, Math.PI * 2);
+        ctx.fillStyle = `rgb(${pal.stamens.anther.join(',')})`;
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(ax, ay, 1.0 * scale, 0, Math.PI * 2);
+        ctx.fillStyle = '#fffde0';
+        ctx.fill();
+      }
+    }
+
+    ctx.restore();
+  }
+
+  function drawSunflowerBud(ctx, prog, scale, fColor, pal) {
+    const budR = (22 + 20 * prog) * scale;
+    ctx.save();
+
+    // Calyx green phyllary base
+    ctx.beginPath();
+    ctx.arc(0, 0, budR, 0, Math.PI * 2);
+    ctx.fillStyle = `rgb(${pal.leaves.shadow.join(',')})`;
+    ctx.fill();
+
+    // Peeking golden petals inside tight bud
+    ctx.beginPath();
+    ctx.arc(0, -budR * 0.15, budR * (0.35 + 0.35 * prog), 0, Math.PI * 2);
+    const peekingGrad = ctx.createRadialGradient(0, -budR * 0.15, 2, 0, -budR * 0.15, budR * 0.7);
+    peekingGrad.addColorStop(0, `rgb(${fColor.highlight.join(',')})`);
+    peekingGrad.addColorStop(0.6, `rgb(${fColor.base.join(',')})`);
+    peekingGrad.addColorStop(1, `rgb(${fColor.shadow.join(',')})`);
+    ctx.fillStyle = peekingGrad;
+    ctx.fill();
+
+    // Radiating green pointed phyllary bracts overlapping the bud
+    const bracts = 12;
+    for (let b = 0; b < bracts; b++) {
+      const angle = (b * Math.PI * 2) / bracts;
+      ctx.save();
+      ctx.rotate(angle);
+      ctx.beginPath();
+      ctx.moveTo(-budR * 0.3, 0);
+      ctx.lineTo(0, -budR * 1.15);
+      ctx.lineTo(budR * 0.3, 0);
+      ctx.fillStyle = `rgb(${pal.leaves.base.join(',')})`;
+      ctx.fill();
+      ctx.strokeStyle = `rgb(${pal.leaves.shadow.join(',')})`;
+      ctx.lineWidth = 1.2;
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    ctx.restore();
+  }
+
+  // --- SPECIES: FORGET-ME-NOT (SCORPION GRASSES) (Myosotis sylvatica) ---
+  function drawBountifulForgetMeNot(ctx, growth, scale, fColor, pal, seed) {
+    if (growth < 0.18) {
+      drawForgetMeNotBud(ctx, growth / 0.18, scale, fColor, pal);
+      return;
+    }
+
+    const bloom = easeOutCubic((growth - 0.18) / 0.82);
+    const petalLen = (50 + 26 * bloom) * scale;
+    const petalW = (32 + 16 * bloom) * scale;
+    const eyeRadius = (9 + 5 * bloom) * scale;
+    const breath = Math.sin(state.time * 2.5 + seed) * 1.5;
+
+    ctx.save();
+
+    // 1. Arching Scorpioid Cyme Pedicels (The "Scorpion Grass" Tail)
+    const tailProgress = smoothstep(0.0, 0.7, bloom);
+    if (tailProgress > 0.05) {
+      ctx.save();
+      ctx.beginPath();
+      ctx.moveTo(0, 0);
+      const cpx1 = 35 * scale * tailProgress;
+      const cpy1 = -40 * scale * tailProgress;
+      const cpx2 = 70 * scale * tailProgress;
+      const cpy2 = -20 * scale * tailProgress;
+      const endX = 85 * scale * tailProgress;
+      const endY = -45 * scale * tailProgress;
+      ctx.bezierCurveTo(cpx1, cpy1, cpx2, cpy2, endX, endY);
+      ctx.strokeStyle = `rgb(${pal.stems.base.join(',')})`;
+      ctx.lineWidth = 2.5 * scale;
+      ctx.lineCap = 'round';
+      ctx.stroke();
+
+      // Satellite Mini-Florets along the scorpion tail
+      const miniPos = [
+        { x: cpx1 * 0.9, y: cpy1 * 0.9, s: 0.45 * scale, prog: Math.max(0, bloom - 0.15) },
+        { x: cpx2 * 0.95, y: cpy2 * 0.95, s: 0.35 * scale, prog: Math.max(0, bloom - 0.3) },
+        { x: endX, y: endY, s: 0.25 * scale, prog: Math.max(0, bloom - 0.45) },
+      ];
+
+      miniPos.forEach((m) => {
+        if (m.prog > 0.05) {
+          ctx.save();
+          ctx.translate(m.x, m.y);
+          drawForgetMeNotMini(ctx, m.prog, m.s, fColor, pal);
+          ctx.restore();
+        }
+      });
+      ctx.restore();
+    }
+
+    // 2. Calyx Sepals (5 Pointed Lobes)
+    for (let s = 0; s < 5; s++) {
+      const sAngle = (s * Math.PI * 2) / 5 + Math.PI / 5;
+      const sLen = 28 * scale * (0.8 + 0.2 * bloom);
+      ctx.save();
+      ctx.rotate(sAngle);
+      ctx.beginPath();
+      ctx.moveTo(-5 * scale, 0);
+      ctx.quadraticCurveTo(-6 * scale, -sLen * 0.6, 0, -sLen);
+      ctx.quadraticCurveTo(6 * scale, -sLen * 0.6, 5 * scale, 0);
+      ctx.closePath();
+      ctx.fillStyle = `rgb(${pal.leaves.shadow.join(',')})`;
+      ctx.fill();
+      ctx.strokeStyle = `rgb(${pal.leaves.base.join(',')})`;
+      ctx.lineWidth = 1.0;
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    // 3. 5 Salverform Petals (Broad, rounded obovate lobes)
+    const goldenEye = fColor.spots || [255, 220, 35];
+    for (let i = 0; i < 5; i++) {
+      const angle = (i * Math.PI * 2) / 5;
+      const pLen = petalLen + breath;
+      const pW = petalW;
+
+      ctx.save();
+      ctx.rotate(angle);
+
+      // Petal outline: classic rounded obovate Myosotis lobe with slight apical notch
+      ctx.beginPath();
+      ctx.moveTo(-pW * 0.22, -eyeRadius * 0.8);
+      ctx.bezierCurveTo(-pW * 0.75, -pLen * 0.35, -pW * 0.68, -pLen * 0.95, -pW * 0.12, -pLen);
+      // Subtle apical notch at outer petal tip
+      ctx.bezierCurveTo(-pW * 0.04, -pLen * 0.96, pW * 0.04, -pLen * 0.96, pW * 0.12, -pLen);
+      ctx.bezierCurveTo(pW * 0.68, -pLen * 0.95, pW * 0.75, -pLen * 0.35, pW * 0.22, -eyeRadius * 0.8);
+      ctx.closePath();
+
+      // Petal gradient: deep royal azure throat -> vibrant sky-blue -> celestial soft edge
+      const pGrad = ctx.createLinearGradient(0, -eyeRadius * 0.8, 0, -pLen);
+      pGrad.addColorStop(0, `rgb(${fColor.shadow.join(',')})`);
+      pGrad.addColorStop(0.35, `rgb(${fColor.base.join(',')})`);
+      pGrad.addColorStop(0.85, `rgb(${fColor.highlight.join(',')})`);
+      pGrad.addColorStop(1.0, `rgb(${fColor.highlight.map(c => Math.min(255, c + 25)).join(',')})`);
+
+      ctx.fillStyle = pGrad;
+      ctx.fill();
+
+      // Delicate radial veins
+      ctx.beginPath();
+      ctx.moveTo(0, -eyeRadius);
+      ctx.lineTo(0, -pLen * 0.88);
+      ctx.moveTo(0, -eyeRadius);
+      ctx.quadraticCurveTo(-pW * 0.25, -pLen * 0.55, -pW * 0.3, -pLen * 0.82);
+      ctx.moveTo(0, -eyeRadius);
+      ctx.quadraticCurveTo(pW * 0.25, -pLen * 0.55, pW * 0.3, -pLen * 0.82);
+      ctx.strokeStyle = `rgba(${fColor.shadow.join(',')}, 0.35)`;
+      ctx.lineWidth = 1.0 * scale;
+      ctx.stroke();
+
+      // Soft rim highlight
+      ctx.strokeStyle = `rgba(${fColor.highlight.map(c => Math.min(255, c + 20)).join(',')}, 0.65)`;
+      ctx.lineWidth = 1.2 * scale;
+      ctx.stroke();
+
+      ctx.restore();
+    }
+
+    // 4. Iconic Luminous Golden Corona Eye (Fornices Scales)
+    // White halo ring around the eye
+    ctx.beginPath();
+    ctx.arc(0, 0, eyeRadius * 1.35, 0, Math.PI * 2);
+    ctx.fillStyle = '#ffffff';
+    ctx.fill();
+
+    // 5 Yellow Fornices Scales / Pentagonal Corona
+    for (let sc = 0; sc < 5; sc++) {
+      const scAngle = (sc * Math.PI * 2) / 5;
+      ctx.save();
+      ctx.rotate(scAngle);
+      ctx.beginPath();
+      ctx.ellipse(0, -eyeRadius * 0.65, eyeRadius * 0.42, eyeRadius * 0.55, 0, 0, Math.PI * 2);
+      ctx.fillStyle = `rgb(${goldenEye.join(',')})`;
+      ctx.fill();
+      ctx.beginPath();
+      ctx.ellipse(0, -eyeRadius * 0.65, eyeRadius * 0.22, eyeRadius * 0.32, 0, 0, Math.PI * 2);
+      ctx.fillStyle = '#fff9bd';
+      ctx.fill();
+      ctx.restore();
+    }
+
+    // Central dark hollow throat
+    ctx.beginPath();
+    ctx.arc(0, 0, eyeRadius * 0.38, 0, Math.PI * 2);
+    ctx.fillStyle = 'rgb(12, 32, 70)';
+    ctx.fill();
+
+    ctx.restore();
+  }
+
+  function drawForgetMeNotMini(ctx, bloomProg, mScale, fColor, pal) {
+    const r = 26 * mScale * (0.4 + 0.6 * bloomProg);
+    const goldenEye = fColor.spots || [255, 220, 35];
+
+    // 5 mini petals
+    for (let p = 0; p < 5; p++) {
+      const pAngle = (p * Math.PI * 2) / 5;
+      const px = Math.cos(pAngle) * r;
+      const py = Math.sin(pAngle) * r;
+      ctx.beginPath();
+      ctx.arc(px, py, r * 0.68, 0, Math.PI * 2);
+      ctx.fillStyle = `rgb(${fColor.base.join(',')})`;
+      ctx.fill();
+      ctx.strokeStyle = `rgba(${fColor.highlight.join(',')}, 0.7)`;
+      ctx.lineWidth = 1.0;
+      ctx.stroke();
+    }
+
+    // Mini eye
+    ctx.beginPath();
+    ctx.arc(0, 0, r * 0.45, 0, Math.PI * 2);
+    ctx.fillStyle = '#ffffff';
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(0, 0, r * 0.3, 0, Math.PI * 2);
+    ctx.fillStyle = `rgb(${goldenEye.join(',')})`;
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(0, 0, r * 0.12, 0, Math.PI * 2);
+    ctx.fillStyle = 'rgb(12, 32, 70)';
     ctx.fill();
   }
 
-  function drawChrysanthemumBud(ctx, prog, scale, fColor, pal) {
-    const r = (16 + 18 * prog) * scale;
+  function drawForgetMeNotBud(ctx, prog, scale, fColor, pal) {
+    const budLen = (24 + 18 * prog) * scale;
+    const budW = (12 + 10 * prog) * scale;
     ctx.save();
+
+    // Curving scorpion-tail stemlet
     ctx.beginPath();
-    ctx.arc(0, 0, r, 0, Math.PI * 2);
-    ctx.fillStyle = `rgb(${pal.leaves.base.join(',')})`;
+    ctx.moveTo(0, 0);
+    ctx.quadraticCurveTo(15 * scale, -15 * scale, 22 * scale * prog, -budLen * 0.6);
+    ctx.strokeStyle = `rgb(${pal.stems.base.join(',')})`;
+    ctx.lineWidth = 2.2 * scale;
+    ctx.stroke();
+
+    // Calyx sepals
+    ctx.beginPath();
+    ctx.moveTo(0, -budLen);
+    ctx.bezierCurveTo(budW, -budLen * 0.5, budW, 0, 0, 6);
+    ctx.bezierCurveTo(-budW, 0, -budW, -budLen * 0.5, 0, -budLen);
+    ctx.fillStyle = `rgb(${pal.leaves.shadow.join(',')})`;
     ctx.fill();
 
+    // Peeking sky-blue petals
     ctx.beginPath();
-    ctx.arc(0, -r * 0.3, r * 0.65, 0, Math.PI * 2);
+    ctx.moveTo(0, -budLen * 0.95);
+    ctx.bezierCurveTo(budW * 0.6, -budLen * 0.5, budW * 0.6, -budLen * 0.2, 0, 0);
+    ctx.bezierCurveTo(-budW * 0.6, -budLen * 0.2, -budW * 0.6, -budLen * 0.5, 0, -budLen * 0.95);
     ctx.fillStyle = `rgb(${fColor.base.join(',')})`;
     ctx.fill();
+
+    // Golden tip peeking
+    ctx.beginPath();
+    ctx.arc(0, -budLen * 0.5, 2.5 * scale, 0, Math.PI * 2);
+    ctx.fillStyle = '#ffdf40';
+    ctx.fill();
+
     ctx.restore();
   }
 
@@ -1116,87 +1318,6 @@
     ctx.fill();
   }
 
-  // --- SPECIES 4: ROMANTIC PEONY ---
-  function drawBountifulPeony(ctx, growth, scale, fColor, pal, seed) {
-    if (growth < 0.20) {
-      drawPeonyBud(ctx, growth / 0.20, scale, fColor, pal);
-      return;
-    }
-
-    const bloom = easeOutCubic((growth - 0.20) / 0.80);
-    const layers = 5;
-    const petalsPerLayer = [8, 10, 12, 14, 16];
-    const maxR = 95 * scale * (0.3 + 0.7 * bloom);
-
-    for (let l = layers - 1; l >= 0; l--) {
-      const lFrac = l / layers;
-      const count = petalsPerLayer[l];
-      const dist = (0.2 + 0.75 * lFrac) * maxR;
-      const pW = (32 + lFrac * 38) * scale;
-      const pH = (28 + lFrac * 36) * scale;
-
-      const layerBloom = smoothstep(1.0 - lFrac * 0.75, 1.0, bloom);
-      if (layerBloom <= 0.01) continue;
-
-      for (let p = 0; p < count; p++) {
-        const angle = (p * Math.PI * 2) / count + (l * 0.4);
-        const px = Math.cos(angle) * dist * layerBloom;
-        const py = Math.sin(angle) * dist * layerBloom;
-
-        ctx.save();
-        ctx.translate(px, py);
-        ctx.rotate(angle + Math.PI / 2);
-
-        ctx.beginPath();
-        ctx.moveTo(-pW / 2, 0);
-        ctx.bezierCurveTo(-pW * 0.7, -pH * 0.5, -pW * 0.4, -pH * 1.15, -pW * 0.15, -pH * 0.95);
-        ctx.bezierCurveTo(0, -pH * 1.12, pW * 0.4, -pH * 1.15, pW / 2, 0);
-        ctx.closePath();
-
-        const gradH = Math.max(1, pH || 1);
-        const pGrad = ctx.createLinearGradient(0, 0, 0, -gradH);
-        pGrad.addColorStop(0, `rgb(${fColor.shadow.join(',')})`);
-        pGrad.addColorStop(0.5, `rgb(${fColor.base.join(',')})`);
-        pGrad.addColorStop(1, `rgb(${fColor.highlight.join(',')})`);
-
-        ctx.fillStyle = pGrad;
-        ctx.fill();
-
-        ctx.strokeStyle = `rgba(${fColor.highlight.map(c => Math.min(255, c + 20)).join(',')}, 0.65)`;
-        ctx.lineWidth = 1.2;
-        ctx.stroke();
-
-        ctx.restore();
-      }
-    }
-
-    if (bloom > 0.4) {
-      for (let st = 0; st < 20; st++) {
-        const sAngle = (st * Math.PI * 2) / 20;
-        const sDist = Math.random() * 12 * scale * bloom;
-        ctx.beginPath();
-        ctx.arc(Math.cos(sAngle) * sDist, Math.sin(sAngle) * sDist, 2.2 * scale, 0, Math.PI * 2);
-        ctx.fillStyle = `rgb(${pal.stamens.anther.join(',')})`;
-        ctx.fill();
-      }
-    }
-  }
-
-  function drawPeonyBud(ctx, prog, scale, fColor, pal) {
-    const r = (18 + 22 * prog) * scale;
-    ctx.save();
-    ctx.beginPath();
-    ctx.arc(0, 0, r, 0, Math.PI * 2);
-    ctx.fillStyle = `rgb(${pal.leaves.base.join(',')})`;
-    ctx.fill();
-
-    ctx.beginPath();
-    ctx.arc(0, -r * 0.4, r * 0.6, 0, Math.PI * 2);
-    ctx.fillStyle = `rgb(${fColor.base.join(',')})`;
-    ctx.fill();
-    ctx.restore();
-  }
-
   // --- HIGH-PERFORMANCE ASCII RASTERIZER ---
   function rasterizeToAscii(ctx, offCtx, time) {
     const w = state.width;
@@ -1351,7 +1472,7 @@
 
   // --- DOSSIER & THEME MANAGERS ---
   function updateDossier(speciesKey) {
-    const dossier = BOTANICAL_DOSSIERS[speciesKey] || BOTANICAL_DOSSIERS.grand;
+    const dossier = BOTANICAL_DOSSIERS[speciesKey] || BOTANICAL_DOSSIERS.forgetmenot;
     document.body.setAttribute('data-species', speciesKey);
 
     const tag = document.getElementById('bio-species-tag');
@@ -1365,12 +1486,8 @@
     if (botName) botName.innerHTML = dossier.botanicalName;
     if (desc) desc.textContent = dossier.desc;
     if (fact) {
-      // Formatted with line breaks if any (e.g. inside joke for chrysanthemums)
       fact.innerHTML = dossier.fact.replace(/\n/g, '<br>');
     }
-
-    const note = document.getElementById('bio-note');
-    if (note) note.textContent = dossier.note;
   }
 
   function updateTheme(themeKey) {

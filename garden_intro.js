@@ -35,8 +35,10 @@
     t: '#2c7d37', // stem shadow
     D: '#5a3a22', // soil
     d: '#7d5634', // soil crumbs
-    P: '#ff6f91', // bud / heart
-    p: '#ffc2d1', // bud highlight
+    P: '#ff6f91', // heart
+    p: '#ffc2d1', // heart highlight
+    U: '#4da6ff', // forget-me-not bud azure blue
+    u: '#ffd74a', // forget-me-not bud golden eye
   };
 
   // --- SPRITES ---
@@ -104,10 +106,10 @@
     '....KKKTKKK....',
   ];
   const BUD = [
-    '.KPK.',
-    'KPPPK',
-    'KPpPK',
-    'KPPPK',
+    '.KUK.',
+    'KUUUK',
+    'KUuUK',
+    'KUUUK',
     '.KTK.',
   ];
   const SOIL = [
